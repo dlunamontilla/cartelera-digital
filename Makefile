@@ -1,12 +1,5 @@
-TRANSPILADOR = scss
-PARAMETROS = -w -t expanded
-RUTA = recursos/activos/sass:vista/css
-
 main:
-	${TRANSPILADOR} ${PARAMETROS} ${RUTA}
+	scss -w resources/assets/sass:public/css
 
-server:
-	php -S localhost:1100
-
-correr:
-	${TRANSPILADOR} ${PARAMETROS} ${RUTA} & php -S localhost:1100
+terminar:
+	killall -9 scss
