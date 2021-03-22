@@ -125,4 +125,30 @@ code {
 a {
   color: inherit; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  *::before, *::after {
+    box-sizing: border-box; }
+
+.nav__contain {
+  position: relative;
+  display: flex; }
+  .nav__contain--center {
+    justify-content: center; }
+  .nav__contain--around {
+    justify-content: space-around; }
+  .nav__contain--between {
+    justify-content: space-between; }
+.nav__menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between; }
+.nav__menu_item {
+  position: relative;
+  display: flex;
+  padding: 5px;
+  margin: 5px 10px; }
+
 /*# sourceMappingURL=styles.css.map */
